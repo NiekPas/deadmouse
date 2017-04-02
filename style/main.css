@@ -1,6 +1,6 @@
 .deadmouse-focused {
   display: inline-block;
-  -webkit-animation: wiggle 0.4s infinite;
+  -webkit-animation: flash 1s infinite;
 }
 
 .deadmouse-clicked {
@@ -8,11 +8,9 @@
   -webkit-animation: bounce 0.3s ease infinite alternate backwards;
 }
 
-@-webkit-keyframes wiggle {
-  0% {-webkit-transform:rotate(0deg);}
-  20% {-webkit-transform:rotate(4deg);}
-  70% {-webkit-transform:rotate(-4deg);}
-  100% {-webkit-transform:rotate(0deg);}
+@-webkit-keyframes flash {
+  0% { color: #fff; }
+  50% { color: #000 }
 }
 
 @-webkit-keyframes bounce {
